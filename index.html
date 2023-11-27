@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .image-section, .login-section {
+            flex: 1;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .image-section {
+            background: url(lpu-poup.jpg) center/cover no-repeat; /* Replace 'university-image.jpg' with your university image URL */
+			padding: 15px;
+			margin-bottom: 10px;
+			text-align: center;
+        }
+
+        .login-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #fbf1f1; /* Set the background color for the login section */
+        }
+
+        .login-form {
+            max-width: 300px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        .login-form button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+		#logo{
+			width: 100px;
+			height: 100px;
+		}
+		#ums{
+			width: 250px;
+			height: 80px;
+		}
+		.imgl{
+			padding: 15px 10px 15px 10px;
+		}
+		.image-container img {
+      width: 50%; /* Adjust the width as needed */
+      height: auto;
+    }
+
+        /* Add additional styling as needed */
+
+    </style>
+    <title>University Management System Login</title>
+</head>
+<body>
+
+    <div class="image-section">
+		<!-- <img src="Screenshot_2023-11-19_at_10.38.32_AM-removebg-preview.png">
+		<img src="ums.png"> -->
+	</div>
+
+    <div class="login-section">
+		<div class="img">
+		<img src="Screenshot_2023-11-19_at_10.38.32_AM-removebg-preview.png" alt="univetrsity logo" id="logo" class="imgl">
+		<img src="ums-removebg-preview.png" alt="ums logo" id="ums" class="imgl">
+	</div>
+        <div class="login-form">
+            <h3>Log in</h3><select name="DropDownList1" id="DropDownList1" class="form-select">
+		<option selected="selected" value="1">HeadOffice</option>
+		<option value="2">Ambedkar Chowk</option>
+		<option value="19">Bhutan</option>
+		<option value="22">Jammu</option>
+		<option value="23">Nepal</option>
+		<option value="34">BanglaDesh</option>
+		<option value="37">Tanzania</option>
+		<option value="38">Kenya</option>
+		<option value="39">Indonesia</option>
+		<option value="40">Sudan</option>
+		<option value="41">TamilnaduCA1</option>
+		<option value="43">Yemen</option>
+		<option value="45">Nigeria</option>
+		<option value="46">Afghanistan</option>
+		<option value="47">JAMMU_CO</option>
+		<option value="48">PUNJAB_CA1</option>
+		<option value="49">PUNJAB_CA2</option>
+		<option value="50">PUNJAB_ASR</option>
+		<option value="52">PUNJAB_LDH</option>
+		<option value="54">HP_CA1</option>
+		<option value="55">HP_CA2</option>
+		<option value="57">HARYANA_CA1</option>
+		<option value="58">HARYANA_CA2</option>
+		<option value="59">HARYANA_AMB</option>
+		<option value="60">DELHI_CO</option>
+		<option value="61">UP_CA1</option>
+		<option value="62">UP_CA2</option>
+		<option value="65">UP_VAR</option>
+		<option value="66">UK_CA1</option>
+		<option value="67">UK_CA2</option>
+		<option value="68">UK_DEH</option>
+		<option value="69">BIHAR_CA1</option>
+		<option value="70">BIHAR_CA2</option>
+		<option value="75">WB_CA1</option>
+		<option value="77">WB_KOL</option>
+		<option value="78">NE_CA1</option>
+		<option value="79">NE_CA2</option>
+		<option value="80">NE_GUH</option>
+		<option value="81">AP_CA1</option>
+		<option value="82">AP_HYD</option>
+		<option value="83">KERALA_CA1</option>
+		<option value="84">TN_CA1</option>
+		<option value="86">MP_CA1</option>
+		<option value="87">MP_CA2</option>
+		<option value="93">GUJARAT_CA1</option>
+		<option value="95">RWANDA</option>
+		<option value="96">BURUNDI</option>
+		<option value="97">NE_CA3</option>
+		<option value="98">NE_CA4</option>
+		<option value="101">AP_CA2</option>
+		<option value="103">UP_CA3</option>
+		<option value="104">Chandigarh</option>
+		<option value="105">USA</option>
+		<option value="108">AP_CA3</option>
+		<option value="110">UP_KAN</option>
+		<option value="111">UP_AGR</option>
+		<option value="183">PUNJAB_BAT</option>
+		<option value="187">PUNJAB_PTK</option>
+		<option value="190">HP_KAN</option>
+		<option value="194">HARYANA_HIS</option>
+		<option value="196">NCR_GUR</option>
+		<option value="197">NCR_GAZ</option>
+		<option value="203">UP_LUC</option>
+		<option value="204">UP_BAR</option>
+		<option value="208">UP_GOR</option>
+		<option value="214">BIHAR_PAT</option>
+		<option value="216">JHARKHAND_CA1</option>
+		<option value="217">JHARKHAND_RAN</option>
+		<option value="224">NE_CA5</option>
+		<option value="225">NE_CA6</option>
+		<option value="229">AP_VIS</option>
+		<option value="233">MAH_CA1</option>
+		<option value="234">MAH_CA2</option>
+		<option value="237">CHATTISGARH_CA1</option>
+		<option value="238">ODISHA_CA1</option>
+		<option value="239">RAJASTHAN_CA1</option>
+		<option value="240">RAJASTHAN_CA2</option>
+		<option value="241">RAJASTHAN_JAI</option>
+		<option value="276">AP_VIJ</option>
+		<option value="277">KARNATAKA_CA1</option>
+		<option value="283">Mongolia</option>
+		<option value="284">Mauritius</option>
+		<option value="286">Kuwait</option>
+		<option value="287">Uganda</option>
+		<option value="288">Thailand</option>
+		<option value="289">Zambia</option>
+		<option value="290">Saudi Arabia</option>
+		<option value="291">Ethopia</option>
+		<option value="292">Srilanka</option>
+		<option value="293">Maldives</option>
+		<option value="294">Ethiopia</option>
+		<option value="295">Syria</option>
+		<option value="296">Iraq</option>
+		<option value="297">Cameroon</option>
+		<option value="298">Egypt</option>
+		<option value="299">Ghana</option>
+		<option value="300">Eritrea</option>
+		<option value="305">Kerala_CA2</option>
+		<option value="384">China</option>
+		<option value="392">Malawi</option>
+		<option value="393">Lesotho</option>
+		<option value="394">Dr Congo</option>
+		<option value="395">South Africa</option>
+		<option value="399">Zimbabwe</option>
+		<option value="401">LATVIA</option>
+		<option value="403">Niger </option>
+		<option value="404">Tajikistan</option>
+		<option value="405">Srinagar_CO</option>
+		<option value="408">NE_MAN</option>
+		<option value="443">Malaysia</option>
+		<option value="483">HP_CA3</option>
+		<option value="491">Kazakhstan</option>
+		<option value="492">Russia</option>
+		<option value="499">Colombia</option>
+		<option value="500">UP_ALL</option>
+		<option value="501">Haryana_CA3</option>
+		<option value="502">Haryana_rohtak</option>
+		<option value="504">Canada</option>
+		<option value="554">PUNJAB_CA3</option>
+		<option value="555">Assam_CA1</option>
+		<option value="556">Assam_CA2</option>
+		<option value="557">Assam_CA3</option>
+		<option value="558">Assam_GUH</option>
+		<option value="600">Haryana_Yamn</option>
+		<option value="603">KARNATAKA_CA2</option>
+		<option value="604">South Sudan</option>
+		<option value="605">Mozambique</option>
+		<option value="692">NCR_CA1</option>
+		<option value="693">NCR_CA2</option>
+		<option value="707">Assam_Jorhat</option>
+		<option value="708">Assam_Tinsukia</option>
+		<option value="709">TLN_CA1</option>
+		<option value="710">HP_CA4</option>
+		<option value="712">The Gambia</option>
+		<option value="713">Congo Brazzaville</option>
+		<option value="714">Guinea</option>
+		<option value="715">TN_CA2</option>
+		<option value="720">Somalia</option>
+		<option value="725">UP_CA4</option>
+		<option value="726">UP_CA5</option>
+		<option value="727">Imphal150617</option>
+		<option value="731">Angola</option>
+		<option value="733">Mali</option>
+		<option value="734">Palestine</option>
+		<option value="735">Jordan</option>
+		<option value="736">OMAN</option>
+		<option value="737">Kota Office 1</option>
+		<option value="738">Kota Office 2</option>
+		<option value="739">Ivory Coast</option>
+		<option value="740">Darjeeling030517</option>
+		<option value="741">Gangtok230517</option>
+		<option value="742">Darjeeling250517</option>
+		<option value="743">Jind100517</option>
+		<option value="744">Thrissur100517</option>
+		<option value="745">Vijaywada130517</option>
+		<option value="746">Pune130517</option>
+		<option value="747">Imphal130517</option>
+		<option value="748">Yamunanagar130617</option>
+		<option value="749">Bangaluru130517</option>
+		<option value="750">Rohtak170517</option>
+		<option value="751">Pallakad170517</option>
+		<option value="752">Kannur180517</option>
+		<option value="753">Hyderabad200517</option>
+		<option value="754">Rajamundry200517</option>
+		<option value="755">Chennai200517</option>
+		<option value="756">Shillong020517</option>
+		<option value="757">Karnal240517</option>
+		<option value="758">Warrangal270517</option>
+		<option value="759">Patna270517</option>
+		<option value="760">Siliguri270517</option>
+		<option value="761">Guwahati300517</option>
+		<option value="762">Shillong300517</option>
+		<option value="763">Kotayam030517</option>
+		<option value="764">Trivandram040517</option>
+		<option value="765">Itanagar050517</option>
+		<option value="766">Hubli060517</option>
+		<option value="767">Kochi080517</option>
+		<option value="769">Agartala090517</option>
+		<option value="770">Jammu100517</option>
+		<option value="771">Kolkatta100617</option>
+		<option value="772">Asansol100617</option>
+		<option value="773">Itanagar010617</option>
+		<option value="774">Srinagar140617</option>
+		<option value="775">Jameshedpur170617</option>
+		<option value="776">Aizwal020617</option>
+		<option value="777">Ranchi240617</option>
+		<option value="778">Patna030617</option>
+		<option value="779">Newdelhi030617</option>
+		<option value="780">Agartala070617</option>
+		<option value="781">Newdelhi080217</option>
+		<option value="782">Gangtok300417</option>
+		<option value="783">Kochi220417</option>
+		<option value="784">Kannur250417</option>
+		<option value="785">Calicut280417</option>
+		<option value="786">Bhubneswar290417</option>
+		<option value="787">Guwahati280417</option>
+		<option value="788">Gorakhpur130517</option>
+		<option value="789">haridwar200517</option>
+		<option value="790">Varanasi280517</option>
+		<option value="791">Orissa_CA2</option>
+		<option value="792">patna31052017</option>
+		<option value="793">Delhi03062017</option>
+		<option value="794">Itanagar050617</option>
+		<option value="795">Burkina Faso</option>
+		<option value="796">Jammu100617</option>
+		<option value="798">Agartala090617</option>
+		<option value="799">Imphal120617</option>
+		<option value="800">Rajasthan_CA3</option>
+		<option value="801">ODHISA_CA2</option>
+		<option value="802">Kohima210617</option>
+		<option value="803">Djibouti</option>
+		<option value="804">UAE (United Arab Emirates)</option>
+		<option value="805">Germany</option>
+		<option value="806">Iran</option>
+		<option value="807">Chad</option>
+		<option value="808">Itanagar_25052018</option>
+		<option value="809">Guwahati_1062018</option>
+		<option value="810">Bhubneshwar_11052018</option>
+		<option value="811">Patna_30052018</option>
+		<option value="812">NewDelhi_2062018</option>
+		<option value="813">Jammu_16062018</option>
+		<option value="814">Thrissur_26052018</option>
+		<option value="815">Shillong_18052018</option>
+		<option value="816">Kannur_24052018</option>
+		<option value="817">Ranchi_19052018</option>
+		<option value="818">Karnal_17052018</option>
+		<option value="819">rohtak_24052018</option>
+		<option value="820">Pb_CA4</option>
+		<option value="821">Pb_CA5</option>
+		<option value="822">Delhi29042018</option>
+		<option value="823">Bhubaneswar</option>
+		<option value="824">Karnal</option>
+		<option value="825">Shillong</option>
+		<option value="826">Ranchi</option>
+		<option value="827">Bengaluru</option>
+		<option value="828">Rohtak</option>
+		<option value="829">Kannur</option>
+		<option value="830">Itanagar</option>
+		<option value="831">Thrissur</option>
+		<option value="832">Patna</option>
+		<option value="833">Guwahati</option>
+		<option value="834">New Delhi</option>
+		<option value="836">Bangluru19052018</option>
+		<option value="837">Imphal 24052018</option>
+		<option value="838">Aizwal26062018</option>
+		<option value="839">Kohima05072018</option>
+		<option value="840">Guwahati09072018</option>
+
+	</select>
+            <form>
+                <label for="username"></label>
+                <input type="text" id="username" placeholder="User ID" required>
+                <i class="input-user"></i>
+
+                <label for="password"></label>
+                <input type="password" id="password" placeholder="Password" required>
+                <i toggle="#password" class="input-eye input-eye-slash toggle-password"></i>
+
+                <button type="submit"><a href="student.html">Login</a></button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
