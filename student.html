@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fafafa;
+}
+nav{
+    margin: 3% auto;
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    color: #333333;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 0px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400px;
+    border-radius: 3px;
+    box-shadow: 0px 5px 20px -17px rgba(0,0,0,0);
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.left a{
+    font-weight: 600;
+    width: 250px;
+    height: 50px;
+}
+
+nav a{
+    color: #333333;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.list{
+    display: flex;
+    list-style: none;
+    text-transform: capitalize;
+}
+.list li{
+    margin-left: 20px;
+}
+.active{
+    color: rgb(5,223,38);
+}
+.list a:hover{
+    color: rgb(5,233,38);
+}
+#check{
+    display: none;
+}
+#toggle{
+    display: none;
+}
+@media(max-width:800px){
+    #check{
+        display: inline;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    .list{
+        flex-direction: column;
+        height: max-content;
+    }
+    .list{
+        flex-direction: column;
+        height: max-content;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        left: 0%;
+        top: 80px;
+        text-align: left;
+        transition: all 0.5s;
+        transform: scaleY(0);
+        transform-origin: top;
+        box-shadow: opx 5px 20px -17px rgba(0,0,0,0);
+        padding: 20px;
+    }
+    .list li{
+        margin: 20px 0;
+    }
+    #toggle:checked ~ .list{
+        transform: scaleY(1);
+    }
+    
+}
+.img-fluid{
+    max-width: 40%;
+    height: auto;
+    padding-left: 20px;
+}
+.main-heading{
+    text-shadow: 3px 2px 6px rgba(0,0,0,.3);
+    font-weight: 700;
+    border: none;
+}
+h2{
+    font-size: 1.75rem;
+    padding: 20px;
+    display: inline-block;
+}
+.img1{
+    width: 100%; /* Adjust the width as needed */
+    height: 80%;
+    margin: auto;
+    /* border: solid 5px; */
+    float: left;
+    padding: 30px;
+
+}
+.login-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #fbf1f1; /* Set the background color for the login section */
+}
+.courses{
+        max-width: 500px;
+            padding: 30px;
+            background: beige;
+            border-radius: 35px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+            margin: 30px;
+            display: inline-block;
+        }
+
+        .courses label {
+            display: block;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        #heading{
+        max-width: 500px;
+            padding: 10px;
+            background: rgb(255, 165, 0);
+            border-radius: 35px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+            margin: 30px;
+            text-align: center;
+            color: white;
+            align-content: center;
+        }
+
+        #heading label {
+            display: block;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .logo{
+            width: 45%;
+            padding-left: 100px;
+        }
+        .courses1{
+        max-width: 800px;
+            padding: 30px;
+            background: beige;
+            border-radius: 50px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+            margin: 30px;
+            display: inline-block;
+        }
+
+        .courses1 label {
+            display: block;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .courses2{
+        max-width: 1400px;
+            padding: 30px;
+            background: beige;
+            border-radius: 50px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+            margin: 30px;
+            /* display: inline-block; */
+        }
+
+        .courses2 label {
+            display: block;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="left">
+            <a href="#">
+            <img src="ums-removebg-preview.png" class="img-fluid">
+        </a>
+        </div>
+        <div class="right">
+            <label for="toggle" id="check"><iconigy-icon icon="gg:menu-round" style="color: rgb(35,35,142);"></iconigy-icon></label>
+            <input type="checkbox" name="toggle" id="toggle">
+            <ul class="list">
+                <li><a href="student.html" class="active">home</a></li>
+                <li><a href="https://conferences.lpu.in/ichpi/about-lpu.php#:~:text=Lovely%20Professional%20University%20(LPU)%20is,and%20started%20operation%20in%202006.">about us</a></li>
+                <!-- <li><a href="#">service</a></li> -->
+                <!-- <li><a href="#">blog</a></li> -->
+                <li><a href="https://conferences.lpu.in/ichpi/contact.php">contact</a></li>
+                <li><p><B>12322585 K23HT</B></p></li><br>
+            </ul>
+        </div>
+    </nav>
+    <h2 class="main-heading">Important Links and Information</h2>
+    <br>
+    <hr><br>
+  <img src="Screenshot 2023-11-19 at 12.59.36 AM.png" class="img1">
+  <br>
+  <hr><br>
+  <div class="courses">
+    <h2 id="heading">My Courses</h2>
+    <p>CHE110:ENVIRONMENTAL STUDIES</p>
+    <br>
+    <hr>
+    <br>
+    <p>CSE111:ORIENTATION TO COMPUTING-I</p>
+    <br>
+    <hr>
+    <br>
+    <p>CSE326:INTERNET PROGRAMMING LABORATORY</p>
+    <br>
+    <hr>
+    <br>
+    <p>ECE249:BASIC ELECTRICAL AND ELECTRONICS ENGINEERING</p>
+    <br>
+    <hr>
+    <br>
+    <p>CE279:BASIC ELECTRICAL AND ELECTRONICS ENGINEERING LABORATORY</p>
+    <br><hr>
+    <br>
+    <p>INT108:PYTHON PROGRAMMING</p>
+    <br><hr><br>
+    <p>MTH174:ENGINEERING MATHEMATICS</p>
+    <br><hr><br>
+    <p>PES318:SOFT SKILLS-I</p>
+  </div>
+  <img src="lpu-poup.jpg" alt="A++" class="logo">
+<br><hr><br><br>
+  <h2 class="main-heading">Placement Details</h2>
+  <br>
+  <hr><br><br>
+  <div class="courses1">
+    <h2 id="heading">Recently Placed</h2>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+  </div>
+  <div class="courses1">
+    <h2 id="heading">Today's Placement Drives</h2>
+    <p>EXPAND MY BUSINESS (EXMYB) - Batch 2024<br>
+        Stream : CSE/IT,MBA<br><br>
+        
+        Salary Package : Stipend Rs. 15000 PM During Internship Period Then CTC Rs. 4 LPA To CTC Rs. 6 LPA<br><a href="">Click Here</a></p>
+        <br><br><br><br><br><br><br><br><br><br>
+  </div>
+  <br><hr><br><br>
+  <h2 class="main-heading">Important Announcements</h2><br><hr><br><br>
+  <div class="courses2">
+  <h2 id="heading">Announcements</h2>
+  <h4>Regarding the extension for uploading of compulsory Information by the students who opt to stay outside university premises for Term -23241 (August-December, 2023)</h4><br>
+    <p>Nov 16,2023<br>
+   This is in reference to the announcement uploaded on UMS dated 14th, 16th, 30th September 2023, 3rd Oct, 9th Oct 2023, 11th Oct 2023, 25th Oct 2023 and 2nd Nov 2023 “Regarding Submission of accommodation disclosure undertakings by students who opt to stay outside university premises for Term -23241 (August-December, 2023)”.<br><br>
+   
+   Continuous requests have been received from some of the students that they need some time to arrange the accommodation related documents as per the requirement of the university.<br><br>
+   
+   Considering the request of the students, it’s informed that required documents can be uploaded by 25th November 2023 from UMS at Important Links - >Compulsory Accommodation Details link now.<br><br>
+   
+   
+   Important Note: As the information is to be shared with local authorities on demand, the information needs to be compulsorily uploaded by the above mentioned date, failing which the student will not be allowed to attend the classes till uploading of the required documents.<br><br>
+   
+   
+   For queries/concerns related to Accommodation documents submission, You can book a prior appointment from UMS at Important Links- Appointment System (Accommodation Disclosure) and then visit 30-501 between 9:00am to 5:00pm or can write at accommodation.manage@lpu.co.in.<br><br>
+   
+   
+   Uploaded by:<br>
+   Office of HOD<br>
+   Accommodation Management Team<br><a href="">Click Here</a></p>
+</div>
+  <br>
+  <hr>
+  <br>
+  <p>Lovely Professional University 2023</p><br>
+</body>
+</html>
